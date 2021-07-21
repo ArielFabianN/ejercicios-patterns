@@ -11,15 +11,15 @@
 <body>
     <form action="">
         <label for="nombre">Nombre</label>
-        <input class="w3-input" type="text" placeholder="Maria" pattern="[A-Z][a-z]+" >
+        <input class="w3-input" type="text" placeholder="Maria" pattern="^[A-Z][a-z]+" >
         <label for="apellidos">Apellidos</label>
-        <input class="w3-input" type="text" placeholder="Maria Jimenez" >
+        <input class="w3-input" type="text" placeholder="Maria Jimenez" pattern="^[A-Z][a-z]+\s?[A-Z][a-z]">
         <label for="dni">DNI</label>
-        <input class="w3-input" type="text" placeholder="40536567U" >
+        <input class="w3-input" type="text" placeholder="40536567U" pattern="^[0-9]{1}[0-9]{7}[A-Z]{1}" >
         <label for="efectivo">Dinero en efectivo</label>
-        <input class="w3-input" type="text" placeholder="22.30" >
+        <input class="w3-input" type="text" placeholder="22.30" pattern="^[0-9]*[.][0-9]{2}|^[0-9]*[,][0-9]{2}">
         <label for="numero_movil">Número móvil</label>
-        <input class="w3-input" type="text" placeholder="666777888 +34666777888" >
+        <input class="w3-input" type="text" placeholder="666777888 +34666777888" pattern="">
         <label for="mascota">Nombre mascota</label>
         <input class="w3-input" type="text" placeholder="LoKi" >
         <input type="submit" value="Validar">
